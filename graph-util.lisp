@@ -90,5 +90,4 @@
             (lambda ()
               (ugraph->dot nodes edges))))
 
-; (defun drawUGraph ()
-;   (ugraph->png "wizard" *wizard-nodes* *wizard-edges*))
+; (ugraph->png "wizard" *wizard-nodes* *wizard-edges*)
