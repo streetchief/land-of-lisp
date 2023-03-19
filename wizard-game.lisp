@@ -105,6 +105,7 @@
                              nil)
                  'string))
   (fresh-line))
+
 (defun dot-name (exp)
   (substitute-if #\_ (complement #'alphanumericp) (prin1-to-string exp)))
 
@@ -167,7 +168,7 @@
                        (princ (dot-name (caar lst)))
                        (princ "--")
                        (princ (dot-name (car edge)))
-                       (princ "label=\"")
+                       (princ "[label=\"")
                        (princ (dot-label (cdr edge)))
                        (princ "\"];")))
                     (cdar lst)))

@@ -49,7 +49,7 @@
                 (cdr node)))
         edges))
 
-(defun graph->dot (nodes edges)
+(defun dgraph->dot (nodes edges)
   (princ "digraph{")
   (nodes->dot nodes)
   (edges->dot edges)
